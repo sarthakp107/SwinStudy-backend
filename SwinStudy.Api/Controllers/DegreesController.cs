@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using SwinStudy.Api.Data;
-using Microsoft.EntityFrameworkCore;
 using SwinStudy.Api.Services;
+using SwinStudy.Api.Dtos;
 
 namespace SwinStudy.Api.Controllers;
 
@@ -9,15 +8,13 @@ namespace SwinStudy.Api.Controllers;
 [Route("api/degrees")]
 public class DegreesController : ControllerBase
 {
-    private readonly AppDbContext _db;
-    public DegreesController(AppDbContext db) => _db= db;
+    private readonly DegreesService _degrees;
+    public DegreesController(DegreesService degrees) => _degrees = degrees;
 
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<ActionResult<List<DegreeResponseDto>>> GetAll()
     {
-        var degrees = await _db.Degrees.Select(d => new {d.DegreeId, d.DegreeName, d.DegreeCode})
-        .ToListAsync();
-
+        var degrees = await _degrees.GetAllAsync();
         return Ok(degrees);
     }
 }

@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Controllers (classic MVC-style API)
 builder.Services.AddControllers();
 
-// Swagger
+// Swagger (OpenAPI)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -65,7 +65,7 @@ builder.Services.AddScoped<UnitsService>();
 
 var app = builder.Build();
 
-// Swagger in dev (or always, your call)
+// Swagger UI
 app.UseSwagger();
 app.UseSwaggerUI();
 
