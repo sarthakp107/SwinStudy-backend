@@ -7,6 +7,7 @@ public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
 
+    public DbSet<User> Users => Set<User>();
     public DbSet<Degree> Degrees => Set<Degree>();
     public DbSet<Unit> Units => Set<Unit>();
     public DbSet<UserSavedFlashcard> UserSavedFlashcards => Set<UserSavedFlashcard>();
@@ -15,6 +16,18 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<User>(e =>
+        {
+            e.ToTable("users");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).HasColumnName("id");
+            e.Property(x => x.Email).HasColumnName("email");
+            e.Property(x => x.PasswordHash).HasColumnName("password_hash");
+            e.Property(x => x.CreatedAt).HasColumnName("created_at");
+            e.Property(x => x.UpdatedAt).HasColumnName("updated_at");
+            e.HasIndex(x => x.Email).IsUnique();
+        });
+
         modelBuilder.Entity<Degree>(e =>
         {
             e.ToTable("all_degrees");

@@ -41,3 +41,12 @@
 /Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/obj/Debug/net7.0/SwinStudy.Api.pdb
 /Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/obj/Debug/net7.0/SwinStudy.Api.genruntimeconfig.cache
 /Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/obj/Debug/net7.0/ref/SwinStudy.Api.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/BCrypt.Net-Next.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

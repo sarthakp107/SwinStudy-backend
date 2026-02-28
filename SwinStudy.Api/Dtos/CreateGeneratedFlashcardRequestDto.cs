@@ -1,7 +1,4 @@
 namespace SwinStudy.Api.Dtos;
 
-public record CreateGeneratedFlashcardRequestDto(
-    string UserId,
-    string Question,
-    string Answer);
+public record CreateGeneratedFlashcardRequestDto(string Question, string Answer);
 
