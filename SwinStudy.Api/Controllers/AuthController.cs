@@ -18,7 +18,7 @@ public class AuthController : ControllerBase
     [AllowAnonymous]
     public async Task<IActionResult> Register([FromBody] RegisterRequestDto request)
     {
-        var (auth, error) = await _auth.RegisterAsync(request.Email, request.Password);
+        var (auth, error) = await _auth.RegisterAsync(request.Name, request.Email, request.Password);
         if (error is not null)
             return BadRequest(new { error });
 

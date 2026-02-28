@@ -20,10 +20,11 @@ public class AuthService
         _config = config;
     }
 
-    public async Task<(AuthResponseDto? Auth, string? Error)> RegisterAsync(string email, string password)
+    public async Task<(AuthResponseDto? Auth, string? Error)> RegisterAsync(string fullName, string email, string password)
     {
         email = email.Trim().ToLowerInvariant();
-        if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+        var name = fullName?.Trim() ?? "";
+        if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(name))
             return (null, "Email and password are required.");
 
         if (password.Length < 8)
@@ -38,6 +39,7 @@ public class AuthService
         var user = new User
         {
             Id = Guid.NewGuid(),
+            FullName = name,
             Email = email,
             PasswordHash = hash,
             CreatedAt = DateTime.UtcNow,
@@ -115,5 +117,5 @@ public class AuthService
     }
 
     private static UserResponseDto ToUserDto(User u) =>
-        new UserResponseDto(u.Id, u.Email, u.CreatedAt);
+        new UserResponseDto(u.Id, u.FullName, u.Email, u.CreatedAt);
 }

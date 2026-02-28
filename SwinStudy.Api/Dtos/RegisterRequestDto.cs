@@ -1,3 +1,3 @@
 namespace SwinStudy.Api.Dtos;
 
-public record RegisterRequestDto(string Email, string Password);
+public record RegisterRequestDto(string Name, string Email, string Password);
