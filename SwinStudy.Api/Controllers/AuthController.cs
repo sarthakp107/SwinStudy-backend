@@ -10,10 +10,39 @@ namespace SwinStudy.Api.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly AuthService _auth;
+    private readonly IConfiguration _config;
 
-    public AuthController(AuthService auth) => _auth = auth;
+    public AuthController(AuthService auth, IConfiguration config)
+    {
+        _auth = auth;
+        _config = config;
+    }
 
-    /// <summary>Register a new user. Returns JWT on success (auto-login).</summary>
+    private void SetAuthCookie(string token)
+    {
+        var cookieName = _config["Jwt:CookieName"] ?? "access_token";
+        var expiresIn = int.Parse(_config["Jwt:ExpiresInSeconds"] ?? "3600");
+        var isProduction = !HttpContext.Request.Host.Host.Contains("localhost", StringComparison.OrdinalIgnoreCase);
+
+        var options = new CookieOptions
+        {
+            HttpOnly = true,
+            Secure = isProduction,
+            SameSite = SameSiteMode.Lax,
+            Path = "/api",
+            MaxAge = TimeSpan.FromSeconds(expiresIn)
+        };
+
+        Response.Cookies.Append(cookieName, token, options);
+    }
+
+    private void ClearAuthCookie()
+    {
+        var cookieName = _config["Jwt:CookieName"] ?? "access_token";
+        Response.Cookies.Delete(cookieName, new CookieOptions { Path = "/api" });
+    }
+
+    /// <summary>Register a new user. Sets HttpOnly cookie and returns user (auto-login).</summary>
     [HttpPost("register")]
     [AllowAnonymous]
     public async Task<IActionResult> Register([FromBody] RegisterRequestDto request)
@@ -22,10 +51,11 @@ public class AuthController : ControllerBase
         if (error is not null)
             return BadRequest(new { error });
 
-        return Ok(auth);
+        SetAuthCookie(auth!.AccessToken);
+        return Ok(new { user = auth.User });
     }
 
-    /// <summary>Login and receive a JWT access token.</summary>
+    /// <summary>Login. Sets HttpOnly cookie and returns user.</summary>
     [HttpPost("login")]
     [AllowAnonymous]
     public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
@@ -34,10 +64,20 @@ public class AuthController : ControllerBase
         if (error is not null)
             return Unauthorized(new { error });
 
-        return Ok(auth);
+        SetAuthCookie(auth!.AccessToken);
+        return Ok(new { user = auth.User });
     }
 
-    /// <summary>Get current user from JWT.</summary>
+    /// <summary>Logout. Clears the auth cookie. AllowAnonymous so expired tokens can still clear the cookie.</summary>
+    [HttpPost("logout")]
+    [AllowAnonymous]
+    public IActionResult Logout()
+    {
+        ClearAuthCookie();
+        return NoContent();
+    }
+
+    /// <summary>Get current user from cookie.</summary>
     [HttpGet("me")]
     [Authorize]
     public async Task<IActionResult> Me()

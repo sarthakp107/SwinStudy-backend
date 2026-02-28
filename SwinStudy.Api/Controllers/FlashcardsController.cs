@@ -60,8 +60,23 @@ public class FlashcardsController : ControllerBase
     public async Task<IActionResult> DeleteSaved(long id)
     {
         var userId = GetUserId();
+        if (string.IsNullOrEmpty(userId)) return Unauthorized();
 
         var deleted = await _flashcards.DeleteSavedAsync(id, userId);
+        if (!deleted) return NotFound();
+        return NoContent();
+    }
+
+    /// <summary>Delete a saved flashcard by question and answer.</summary>
+    [HttpDelete("saved")]
+    public async Task<IActionResult> DeleteSavedByQuestionAnswer([FromQuery] string question, [FromQuery] string answer)
+    {
+        var userId = GetUserId();
+        if (string.IsNullOrEmpty(userId)) return Unauthorized();
+        if (string.IsNullOrWhiteSpace(question) || string.IsNullOrWhiteSpace(answer))
+            return BadRequest("question and answer are required.");
+
+        var deleted = await _flashcards.DeleteSavedByQuestionAnswerAsync(userId, question, answer);
         if (!deleted) return NotFound();
         return NoContent();
     }

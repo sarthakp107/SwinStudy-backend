@@ -41,4 +41,26 @@ public class UnitsService
                u.UnitCode,
                u.CreditPoints))
            .FirstOrDefaultAsync();
+
+    /// <summary>Get users who have the given unit in their survey (unit buddies).</summary>
+    public async Task<List<UnitMemberDto>> GetUnitMembersByUnitNameAsync(string unitName)
+    {
+        if (string.IsNullOrWhiteSpace(unitName)) return new List<UnitMemberDto>();
+
+        var unit = await _db.Units
+            .AsNoTracking()
+            .Where(u => u.UnitName == unitName)
+            .Select(u => u.UnitId)
+            .FirstOrDefaultAsync();
+
+        if (unit == 0) return new List<UnitMemberDto>();
+
+        return await _db.UserUnits
+            .AsNoTracking()
+            .Where(uu => uu.UnitId == unit)
+            .Join(_db.Users, uu => uu.UserId, u => u.Id, (uu, u) => u)
+            .OrderBy(u => u.FullName)
+            .Select(u => new UnitMemberDto(u.Id, u.FullName))
+            .ToListAsync();
+    }
 }

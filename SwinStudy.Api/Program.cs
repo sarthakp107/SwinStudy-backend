@@ -39,14 +39,23 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>()
+    ?? new[] { "http://localhost:5173", "http://localhost:3000" };
+if (allowedOrigins.Length == 0)
+    allowedOrigins = new[] { "http://localhost:5173", "http://localhost:3000" };
+
+var originsSet = new HashSet<string>(allowedOrigins, StringComparer.OrdinalIgnoreCase);
+Console.WriteLine($"CORS allowed origins: {string.Join(", ", allowedOrigins)}");
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy
-            .AllowAnyOrigin()
+            .SetIsOriginAllowed(origin => !string.IsNullOrEmpty(origin) && originsSet.Contains(origin))
             .AllowAnyHeader()
-            .AllowAnyMethod();
+            .AllowAnyMethod()
+            .AllowCredentials();
     });
 });
 
@@ -92,6 +101,8 @@ var jwtKey = builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationExcep
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "SwinStudy.Api";
 var jwtAudience = builder.Configuration["Jwt:Audience"] ?? "SwinStudy.Api";
 
+var cookieName = builder.Configuration["Jwt:CookieName"] ?? "access_token";
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -108,18 +119,19 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
         options.Events = new JwtBearerEvents
         {
+            OnMessageReceived = context =>
+            {
+                var token = context.Request.Cookies[cookieName];
+                if (!string.IsNullOrEmpty(token))
+                    context.Token = token;
+                return Task.CompletedTask;
+            },
             OnChallenge = async context =>
             {
-                // Prevent default 401 response
                 context.HandleResponse();
-
                 context.Response.StatusCode = StatusCodes.Status401Unauthorized;
                 context.Response.ContentType = "application/json";
-
-                await context.Response.WriteAsJsonAsync(new
-                {
-                    error = "Unauthorized",
-                });
+                await context.Response.WriteAsJsonAsync(new { error = "Unauthorized" });
             }
         };
     });
@@ -131,18 +143,20 @@ builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<DegreesService>();
 builder.Services.AddScoped<UnitsService>();
 builder.Services.AddScoped<FlashcardsService>();
+builder.Services.AddScoped<SurveyService>();
 
 var app = builder.Build();
+
+// CORS first (before any other middleware that might write a response)
+app.UseCors("AllowFrontend");
 
 // Swagger UI
 app.UseSwagger();
 app.UseSwaggerUI();
 
-// CORS
-app.UseCors("AllowFrontend");
-
-// Usual middleware
-app.UseHttpsRedirection();
+// HTTPS redirection only in production (avoids redirect issues with CORS preflight in dev)
+if (!app.Environment.IsDevelopment())
+    app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 

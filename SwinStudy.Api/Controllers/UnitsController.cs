@@ -36,5 +36,15 @@ public class UnitsController : ControllerBase
         if (unit is null) return NotFound();
         return Ok(unit);
     }
+
+    /// <summary>Get users (unit buddies) who have selected this unit. Unit name from URL-encoded path.</summary>
+    [HttpGet("members")]
+    public async Task<ActionResult<List<UnitMemberDto>>> GetMembers([FromQuery] string unitName)
+    {
+        if (string.IsNullOrWhiteSpace(unitName)) return BadRequest("unitName is required.");
+
+        var members = await _units.GetUnitMembersByUnitNameAsync(unitName);
+        return Ok(members);
+    }
 }
 

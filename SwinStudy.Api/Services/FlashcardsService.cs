@@ -68,6 +68,21 @@ public class FlashcardsService
         return true;
     }
 
+    public async Task<bool> DeleteSavedByQuestionAnswerAsync(string userId, string question, string answer)
+    {
+        var entity = await _db.UserSavedFlashcards
+            .FirstOrDefaultAsync(f => f.UserId == userId && f.Question == question && f.Answer == answer);
+
+        if (entity is null)
+        {
+            return false;
+        }
+
+        _db.UserSavedFlashcards.Remove(entity);
+        await _db.SaveChangesAsync();
+        return true;
+    }
+
     public Task<List<GeneratedFlashcardResponseDto>> GetUserGeneratedAsync(string userId) =>
         _db.UserGeneratedFlashcards
            .AsNoTracking()

@@ -10,6 +10,7 @@ public class AppDbContext : DbContext
     public DbSet<User> Users => Set<User>();
     public DbSet<Degree> Degrees => Set<Degree>();
     public DbSet<Unit> Units => Set<Unit>();
+    public DbSet<UserUnit> UserUnits => Set<UserUnit>();
     public DbSet<UserSavedFlashcard> UserSavedFlashcards => Set<UserSavedFlashcard>();
     public DbSet<AllFlashcard> AllFlashcards => Set<AllFlashcard>();
     public DbSet<UserGeneratedFlashcard> UserGeneratedFlashcards => Set<UserGeneratedFlashcard>();
@@ -24,9 +25,22 @@ public class AppDbContext : DbContext
             e.Property(x => x.FullName).HasColumnName("full_name");
             e.Property(x => x.Email).HasColumnName("email");
             e.Property(x => x.PasswordHash).HasColumnName("password_hash");
+            e.Property(x => x.HasSubmittedSurvey).HasColumnName("has_submitted_survey");
+            e.Property(x => x.Degree).HasColumnName("degree");
+            e.Property(x => x.Semester).HasColumnName("semester");
             e.Property(x => x.CreatedAt).HasColumnName("created_at");
             e.Property(x => x.UpdatedAt).HasColumnName("updated_at");
             e.HasIndex(x => x.Email).IsUnique();
+        });
+
+        modelBuilder.Entity<UserUnit>(e =>
+        {
+            e.ToTable("user_units");
+            e.HasKey(x => new { x.UserId, x.UnitId });
+            e.Property(x => x.UserId).HasColumnName("user_id");
+            e.Property(x => x.UnitId).HasColumnName("unit_id");
+            e.HasOne(x => x.User).WithMany().HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Unit).WithMany().HasForeignKey(x => x.UnitId).OnDelete(DeleteBehavior.Cascade);
         });
 
         modelBuilder.Entity<Degree>(e =>
