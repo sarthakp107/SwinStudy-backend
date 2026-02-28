@@ -18,5 +18,23 @@ public class UnitsController : ControllerBase
         var units = await _units.GetAllAsync();
         return Ok(units);
     }
+
+    [HttpGet("{id:long}")]
+    public async Task<ActionResult<UnitResponseDto>> GetById(long id)
+    {
+        var unit = await _units.GetByIdAsync(id);
+        if (unit is null) return NotFound();
+        return Ok(unit);
+    }
+
+    [HttpGet("by-code/{unitCode}")]
+    public async Task<ActionResult<UnitResponseDto>> GetByCode(string unitCode)
+    {
+        if (string.IsNullOrWhiteSpace(unitCode)) return BadRequest("unitCode is required.");
+
+        var unit = await _units.GetByCodeAsync(unitCode);
+        if (unit is null) return NotFound();
+        return Ok(unit);
+    }
 }
 

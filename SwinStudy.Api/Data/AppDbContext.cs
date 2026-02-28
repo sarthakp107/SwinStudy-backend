@@ -9,6 +9,9 @@ public class AppDbContext : DbContext
 
     public DbSet<Degree> Degrees => Set<Degree>();
     public DbSet<Unit> Units => Set<Unit>();
+    public DbSet<UserSavedFlashcard> UserSavedFlashcards => Set<UserSavedFlashcard>();
+    public DbSet<AllFlashcard> AllFlashcards => Set<AllFlashcard>();
+    public DbSet<UserGeneratedFlashcard> UserGeneratedFlashcards => Set<UserGeneratedFlashcard>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -31,6 +34,42 @@ public class AppDbContext : DbContext
             e.Property(x => x.UnitCode).HasColumnName("unit_code");
             e.Property(x => x.CreditPoints).HasColumnName("credit_points");
             e.Property(x => x.CreatedAt).HasColumnName("created_at");
+        });
+
+        modelBuilder.Entity<UserSavedFlashcard>(e =>
+        {
+            e.ToTable("m_usersavedflashcards");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).HasColumnName("m_usersavedflashcards_pkey");
+            e.Property(x => x.UserId).HasColumnName("userid");
+            e.Property(x => x.Question).HasColumnName("question");
+            e.Property(x => x.Answer).HasColumnName("answer");
+            e.Property(x => x.CreatedAt).HasColumnName("created_at");
+        });
+
+        modelBuilder.Entity<AllFlashcard>(e =>
+        {
+            e.ToTable("m_allflashcards");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).HasColumnName("m_allflashcards_pkey");
+            e.Property(x => x.Question).HasColumnName("question");
+            e.Property(x => x.Answer).HasColumnName("answer");
+            e.Property(x => x.CreatedDate).HasColumnName("created_date");
+        });
+
+        modelBuilder.Entity<UserGeneratedFlashcard>(e =>
+        {
+            e.ToTable("m_usergeneratedflashcards");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).HasColumnName("m_usergeneratedflashcards_pkey");
+            e.Property(x => x.UserId).HasColumnName("userid");
+            e.Property(x => x.QnaReferenceId).HasColumnName("qnareference");
+            e.Property(x => x.CreatedAt).HasColumnName("created_at");
+
+            e.HasOne(x => x.Flashcard)
+             .WithMany(f => f.GeneratedByUsers)
+             .HasForeignKey(x => x.QnaReferenceId)
+             .HasConstraintName("fk_m_usergeneratedflashcards_qnaref");
         });
     }
 }

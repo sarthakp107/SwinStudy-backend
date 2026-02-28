@@ -62,6 +62,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Services (DI)
 builder.Services.AddScoped<DegreesService>();
 builder.Services.AddScoped<UnitsService>();
+builder.Services.AddScoped<FlashcardsService>();
 
 var app = builder.Build();
 
