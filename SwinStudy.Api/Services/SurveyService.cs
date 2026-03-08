@@ -5,7 +5,14 @@ using SwinStudy.Api.Models;
 
 namespace SwinStudy.Api.Services;
 
-public class SurveyService
+public interface IStudyService
+{
+    Task<List<UnitResponseDto>> GetUserUnitsAsync(Guid userId);
+    Task<bool> GetHasSubmittedSurveyAsync(Guid userId);
+    Task<bool> SubmitSurveyAsync(Guid userId, SubmitSurveyRequestDto dto);
+}
+
+public class SurveyService : IStudyService
 {
     private readonly AppDbContext _db;
 

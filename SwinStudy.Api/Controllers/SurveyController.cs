@@ -11,7 +11,8 @@ namespace SwinStudy.Api.Controllers;
 [Authorize]
 public class SurveyController : ControllerBase
 {
-    private readonly SurveyService _survey;
+    // private readonly SurveyService _survey;
+    private readonly IStudyService _survey;
 
     public SurveyController(SurveyService survey) => _survey = survey;
 
@@ -38,7 +39,7 @@ public class SurveyController : ControllerBase
     }
 
     /// <summary>Submit the survey (degree, semester, units).</summary>
-    [HttpPost]
+    [HttpPost("save")]
     public async Task<IActionResult> Submit([FromBody] SubmitSurveyRequestDto dto)
     {
         var userId = User.GetUserId();
