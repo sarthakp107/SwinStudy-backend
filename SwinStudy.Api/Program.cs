@@ -90,7 +90,7 @@ try
 }
 catch
 {
-    // best-effort logging only
+  
 }
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -142,7 +142,8 @@ builder.Services.AddAuthorization();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<DegreesService>();
 builder.Services.AddScoped<UnitsService>();
-builder.Services.AddScoped<FlashcardsService>();
+builder.Services.AddScoped<IFlashcardsService, FlashcardsService>();
+builder.Services.AddHttpClient();
 builder.Services.AddScoped<SurveyService>();
 
 var app = builder.Build();
