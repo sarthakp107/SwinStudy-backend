@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wGhdsCWEgoAV0egwmZYINUmFSBqg84pmYV93BelU+tg8y6TL/I5a+gVgoZfP0njyuMaNhaoOv/yRS3E5wY25dQ==",
+  "dgSpecHash": "JRGWwpUXfCLHZtSNFo9SkWTppmQdYd2PENezp+maOWuGCa3GH2u08njQuGn03u3xOtbMYV3VLyfGf0W4yTNIKQ==",
   "success": true,
   "projectFilePath": "/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/SwinStudy.Api.csproj",
   "expectedPackageFiles": [
@@ -47,7 +47,12 @@
     "/Users/sarthakpradhan/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "/Users/sarthakpradhan/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/Users/sarthakpradhan/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/Users/sarthakpradhan/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
+    "/Users/sarthakpradhan/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
+    "/Users/sarthakpradhan/.nuget/packages/uglytoad.pdfpig/1.7.0-custom-5/uglytoad.pdfpig.1.7.0-custom-5.nupkg.sha512",
+    "/Users/sarthakpradhan/.nuget/packages/uglytoad.pdfpig.core/1.7.0-custom-5/uglytoad.pdfpig.core.1.7.0-custom-5.nupkg.sha512",
+    "/Users/sarthakpradhan/.nuget/packages/uglytoad.pdfpig.fonts/1.7.0-custom-5/uglytoad.pdfpig.fonts.1.7.0-custom-5.nupkg.sha512",
+    "/Users/sarthakpradhan/.nuget/packages/uglytoad.pdfpig.tokenization/1.7.0-custom-5/uglytoad.pdfpig.tokenization.1.7.0-custom-5.nupkg.sha512",
+    "/Users/sarthakpradhan/.nuget/packages/uglytoad.pdfpig.tokens/1.7.0-custom-5/uglytoad.pdfpig.tokens.1.7.0-custom-5.nupkg.sha512"
   ],
   "logs": []
 }

@@ -50,3 +50,8 @@
 /Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/UglyToad.PdfPig.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/UglyToad.PdfPig.Core.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/UglyToad.PdfPig.Fonts.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/UglyToad.PdfPig.Tokenization.dll
+/Users/sarthakpradhan/Projects/SwinStudy-backend/SwinStudy.Api/bin/Debug/net7.0/UglyToad.PdfPig.Tokens.dll

@@ -9,11 +9,34 @@ namespace SwinStudy.Api.Controllers;
 [Route("api/flashcards")]
 public class FlashcardsController : ControllerBase
 {
-    private readonly FlashcardsService _flashcards;
+    private readonly IFlashcardsService _flashcards;
 
-    public FlashcardsController(FlashcardsService flashcards) => _flashcards = flashcards;
+    public FlashcardsController(IFlashcardsService flashcards) => _flashcards = flashcards;
 
     private string? GetUserId() => User.GetUserIdString();
+
+    /// <summary>Generate flashcard Q&amp;A pairs from an uploaded PDF (extracts text and calls LLM).</summary>
+    [HttpPost("generate")]
+    [RequestSizeLimit(20 * 1024 * 1024)] // 10 MB
+    public async Task<ActionResult<GenerateFlashcardsResponseDto>> Generate([FromForm] IFormFile? file, CancellationToken cancellationToken)
+    {
+        if (file == null || file.Length == 0)
+            return BadRequest("A PDF file is required.");
+        if (!string.Equals(file.ContentType, "application/pdf", StringComparison.OrdinalIgnoreCase) &&
+            !file.FileName.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase))
+            return BadRequest("File must be a PDF.");
+
+        byte[] bytes;
+        await using (var stream = file.OpenReadStream())
+        using (var ms = new MemoryStream())
+        {
+            await stream.CopyToAsync(ms, cancellationToken);
+            bytes = ms.ToArray();
+        }
+
+        var result = await _flashcards.GenerateFromPdfAsync(bytes, cancellationToken);
+        return Ok(result);
+    }
 
     /// <summary>Get current user's saved flashcards.</summary>
     /// 
