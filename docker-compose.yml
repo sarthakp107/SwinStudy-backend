@@ -16,23 +16,21 @@ services:
       interval: 5s
       timeout: 5s
       retries: 20
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: backend-api
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      ASONETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Host=db;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy
 
-  # flyway:
-  #   image: flyway/flyway:10
-  #   container_name: backend-flyway
-  #   depends_on:
-  #     db:
-  #       condition: service_healthy
-  #   environment:
-  #     FLYWAY_URL: jdbc:postgresql://db:5432/${POSTGRES_DB}
-  #     FLYWAY_USER: ${POSTGRES_USER}
-  #     FLYWAY_PASSWORD: ${POSTGRES_PASSWORD}
-  #     FLYWAY_CONNECT_RETRIES: 60
-  #     FLYWAY_LOCATIONS: filesystem:/flyway/sql
-  #     FLYWAY_VALIDATE_MIGRATION_NAMING: "true"
-  #   command: migrate
-  #   volumes:
-  #     - ./migrations:/flyway/sql:ro
 
 volumes:
   dbdata:
