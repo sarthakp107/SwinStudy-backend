@@ -7,6 +7,8 @@ using SwinStudy.Api.Data;
 using SwinStudy.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls("http://0.0.0.0:8080");
+
 
 // Controllers (classic MVC-style API) - require JWT by default
 builder.Services.AddControllers(options =>
@@ -147,6 +149,11 @@ builder.Services.AddHttpClient();
 builder.Services.AddScoped<SurveyService>();
 
 var app = builder.Build();
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.Migrate();
+}
 
 // CORS first (before any other middleware that might write a response)
 app.UseCors("AllowFrontend");
@@ -157,7 +164,7 @@ app.UseSwaggerUI();
 
 // HTTPS redirection only in production (avoids redirect issues with CORS preflight in dev)
 if (!app.Environment.IsDevelopment())
-    app.UseHttpsRedirection();
+    // app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
