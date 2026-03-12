@@ -149,11 +149,11 @@ builder.Services.AddHttpClient();
 builder.Services.AddScoped<SurveyService>();
 
 var app = builder.Build();
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    db.Database.Migrate();
-}
+// using (var scope = app.Services.CreateScope())
+// {
+//     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+//     db.Database.Migrate();
+// }
 
 // CORS first (before any other middleware that might write a response)
 app.UseCors("AllowFrontend");
@@ -163,11 +163,13 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 // HTTPS redirection only in production (avoids redirect issues with CORS preflight in dev)
-if (!app.Environment.IsDevelopment())
+// if (!app.Environment.IsDevelopment())
     // app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapGet("/health", () => Results.Ok("healthy")).AllowAnonymous();
 
 app.Run();
