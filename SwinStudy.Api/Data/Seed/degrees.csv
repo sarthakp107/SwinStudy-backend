@@ -1,0 +1,357 @@
+degree_id,degree_name,degree_code,created_at
+1,Graduate Diploma of Early Childhood Teaching,GD-ECTEAS,2026-02-22 11:50:04.268711+00
+2,Bachelor of Design/Bachelor of Media and Communication,BB-DESMCMN,2026-02-22 11:50:04.268711+00
+3,Graduate Certificate of Counselling,GC-COU,2026-02-22 11:50:04.268711+00
+4,Graduate Certificate in Clinical Supervision,GC-CLSUP,2026-02-22 11:50:04.268711+00
+5,Diploma of Event Management,SIT50322,2026-02-22 11:50:04.268711+00
+6,Certificate IV in Cyber Security,22603VIC,2026-02-22 11:50:04.268711+00
+7,Master of Teaching,Secondary,2026-02-22 11:50:04.268711+00
+8,Graduate Certificate of Aviation,Piloting,2026-02-22 11:50:04.268711+00
+9,Bachelor of Aviation and Piloting,BA-AVPIL,2026-02-22 11:50:04.268711+00
+10,Bachelor of Games and Interactivity,BA-GAMIA,2026-02-22 11:50:04.268711+00
+11,Graduate Diploma of Information Technology,GD-IT1,2026-02-22 11:50:04.268711+00
+12,Bachelor of Health Science,BA-HSC1,2026-02-22 11:50:04.268711+00
+13,Certificate IV in Leadership and Management,BSB40520,2026-02-22 11:50:04.268711+00
+14,Masterclass: Agile Project Management,MCAPM,2026-02-22 11:50:04.268711+00
+15,Continuing Professional Development,CPD,2026-02-22 11:50:04.268711+00
+16,Graduate Diploma of Financial Planning,GD-FINPLS,2026-02-22 11:50:04.268711+00
+17,Diploma of Applied Technologies,DP-APPTEC,2026-02-22 11:50:04.268711+00
+18,Advanced Diploma of Interior Design,MSF60118,2026-02-22 11:50:04.268711+00
+19,Doctor of Philosophy,DR-INTDES,2026-02-22 11:50:04.268711+00
+20,Bachelor of Laws/Bachelor of Cyber Security,BB-LAWCYB,2026-02-22 11:50:04.268711+00
+21,Certificate III in Engineering - Fabrication Trade,MEM30319,2026-02-22 11:50:04.268711+00
+22,Enterprise Trainer - Presenting Skill Set,TAESS00014,2026-02-22 11:50:04.268711+00
+23,Diploma of Youth Work,CHC50421,2026-02-22 11:50:04.268711+00
+24,Diploma of Quality Auditing,BSB50920,2026-02-22 11:50:04.268711+00
+25,New Supervisor,NEWSIS,2026-02-22 11:50:04.268711+00
+26,Graduate Certificate in Organisational Coaching,10778NAT,2026-02-22 11:50:04.268711+00
+27,Bachelor of Science,BA-SC2,2026-02-22 11:50:04.268711+00
+28,Graduate Certificate of Management,Workplace Transformation,2026-02-22 11:50:04.268711+00
+29,Certificate IV in Laboratory Techniques,MSL40122,2026-02-22 11:50:04.268711+00
+31,Diploma of Photography and Digital Imaging,CUA50920,2026-02-22 11:50:04.268711+00
+33,Negotiation skills,NGOIS,2026-02-22 11:50:04.268711+00
+34,Bachelor of Psychological Sciences,BA-PSYS,2026-02-22 11:50:04.268711+00
+35,Certificate IV in Allied Health Assistance,HLT43021,2026-02-22 11:50:04.268711+00
+36,Undergraduate Certificate of Business,CU-BUSS,2026-02-22 11:50:04.268711+00
+38,Doctor of Philosophy and Graduate Certificate of Research and Innovation Management,DR-LAWGC,2026-02-22 11:50:04.268711+00
+39,Microsoft Excel Intermediate,EXCBIS,2026-02-22 11:50:04.268711+00
+40,Diploma of Sport,SIS50321,2026-02-22 11:50:04.268711+00
+42,Bachelor of Laws/Bachelor of Arts,BB-LAWART,2026-02-22 11:50:04.268711+00
+43,Mental Health Essentials for People Leaders,SCMHEPL,2026-02-22 11:50:04.268711+00
+44,Diploma of Vocational Education and Training/Diploma of Training Design and Development,TAE50116/T,2026-02-22 11:50:04.268711+00
+45,Bachelor of Education,Early Childhood and Primary,2026-02-22 11:50:04.268711+00
+46,Graduate Certificate of Data Science,GC-DATASC,2026-02-22 11:50:04.268711+00
+47,Graduate Certificate of Business Administration,GC-BUSADM4,2026-02-22 11:50:04.268711+00
+48,International Exchange Program,IX-INTX,2026-02-22 11:50:04.268711+00
+49,Bachelor of Laws/Bachelor of Business Analytics and Analysis,BB-LAWBAA,2026-02-22 11:50:04.268711+00
+50,Bachelor of Health Science/Bachelor of Media and Communication,BB-HSCMCMN,2026-02-22 11:50:04.268711+00
+51,Certificate III in Carpentry,CPC30220,2026-02-22 11:50:04.268711+00
+53,Bachelor of Design/Bachelor of Business,BB-DESBUS1,2026-02-22 11:50:04.268711+00
+54,Bachelor of Laws/Bachelor of Psychological Sciences,BB-LAWPSY,2026-02-22 11:50:04.268711+00
+55,Industrial Training Course: PSS®E Module 2,SH-PSSEM02,2026-02-22 11:50:04.268711+00
+56,Bachelor of Laws - Graduate Entry,BA-LAW1S,2026-02-22 11:50:04.268711+00
+57,Masterclass: Transformational Leadership,MCTLEAD,2026-02-22 11:50:04.268711+00
+59,Bachelor of Engineering,Honours,2026-02-22 11:50:04.268711+00
+60,Graduate Certificate of Entrepreneurship and Innovation,GC-ENTINN3,2026-02-22 11:50:04.268711+00
+61,Conflict Resolution,CONFIS,2026-02-22 11:50:04.268711+00
+62,Confident communication – Improving your confidence and assertiveness,CCOMIS,2026-02-22 11:50:04.268711+00
+63,Master of Health Sciences,Research,2026-02-22 11:50:04.268711+00
+64,Mental Health Fundamentals,SCMHF,2026-02-22 11:50:04.268711+00
+65,Diploma of Engineering,UniLink,2026-02-22 11:50:04.268711+00
+66,Master of Architecture,MA-ARC,2026-02-22 11:50:04.268711+00
+67,Bachelor of Design,Communication Design,2026-02-22 11:50:04.268711+00
+68,Certificate I in General Education for Adults,Introductory,2026-02-22 11:50:04.268711+00
+69,Graduate Certificate of Writing,GC-WRI,2026-02-22 11:50:04.268711+00
+70,Master of Information and Communication Technologies,Research,2026-02-22 11:50:04.268711+00
+71,Graduate Certificate of Project Management,GC-PMS,2026-02-22 11:50:04.268711+00
+72,Stress Aware and Self Care,SCSASC,2026-02-22 11:50:04.268711+00
+73,Bachelor of Games and Interactivity/Bachelor of Applied Innovation,BB-GAMAIN,2026-02-22 11:50:04.268711+00
+74,Bachelor of Accounting/Bachelor of Applied Innovation,BB-ACCAIN,2026-02-22 11:50:04.268711+00
+75,"Commercialisation Skills for Health, Medical and Medtech Researchers",MEDTECH,2026-02-22 11:50:04.268711+00
+76,Master of Business Administration,MBA,2026-02-22 11:50:04.268711+00
+77,Emotional Intelligence Training,BLEIIS,2026-02-22 11:50:04.268711+00
+78,Bachelor of Nutrition,BA-NTR,2026-02-22 11:50:04.268711+00
+79,Bachelor of Arts/Bachelor of Science,BB-ARTSC,2026-02-22 11:50:04.268711+00
+80,Graduate Diploma of Science,Astronomy,2026-02-22 11:50:04.268711+00
+81,Certificate III in Information Technology,ICT30120,2026-02-22 11:50:04.268711+00
+82,Certificate IV in Entrepreneurship and New Business,BSB40320,2026-02-22 11:50:04.268711+00
+83,Certificate IV in Science,22608VIC,2026-02-22 11:50:04.268711+00
+84,Certificate IV in School Based Education Support,CHC40221,2026-02-22 11:50:04.268711+00
+85,International Study Abroad Program,12 Months,2026-02-22 11:50:04.268711+00
+87,Project Management Fundamentals,PRMEIS,2026-02-22 11:50:04.268711+00
+88,Bachelor of Aviation Management/Bachelor of Applied Innovation,BB-AVMAIN,2026-02-22 11:50:04.268711+00
+89,Master of Writing,MA-WRI,2026-02-22 11:50:04.268711+00
+90,Graduate Certificate of Science,Astronomy,2026-02-22 11:50:04.268711+00
+91,Diploma of Health Science,UniLink,2026-02-22 11:50:04.268711+00
+92,Diploma of Interior Design,MSF50222,2026-02-22 11:50:04.268711+00
+93,Diploma of Sport/Diploma of Leadership and Management,SIS50321/BSB50420,2026-02-22 11:50:04.268711+00
+94,"Resilience, stress management and mindfulness",RSMIS,2026-02-22 11:50:04.268711+00
+95,Graduate Certificate of Professional Accounting,GC-PACC,2026-02-22 11:50:04.268711+00
+96,Bachelor of Screen Production/Bachelor of Applied Innovation,BB-SPDAIN,2026-02-22 11:50:04.268711+00
+97,Lead Auditor Training,SS-AUDIT1,2026-02-22 11:50:04.268711+00
+98,Master of Law,Research,2026-02-22 11:50:04.268711+00
+99,"Certificate III in Information, Digital Media and Technology",ICT30118,2026-02-22 11:50:04.268711+00
+100,Master of Urban Design,MA-UD,2026-02-22 11:50:04.268711+00
+101,Innovation Huddle,DFM-FTSP,2026-02-22 11:50:04.268711+00
+102,Diploma of Laboratory Technology,MSL50122,2026-02-22 11:50:04.268711+00
+103,Certificate IV in Professional Writing and Editing,CUA40118,2026-02-22 11:50:04.268711+00
+105,Master of Professional Accounting,Extended,2026-02-22 11:50:04.268711+00
+106,Managing for Maximum Performance,MMXPIS,2026-02-22 11:50:04.268711+00
+107,Diploma of Business,UniLink,2026-02-22 11:50:04.268711+00
+108,Diploma of Social Media Marketing,10904NAT,2026-02-22 11:50:04.268711+00
+109,Advanced Diploma of Engineering Technology - Electrical,UEE62122,2026-02-22 11:50:04.268711+00
+110,Master of Entrepreneurship and Innovation,MA-ENTINN5,2026-02-22 11:50:04.268711+00
+112,Master of Engineering Science,MA-ENGSC,2026-02-22 11:50:04.268711+00
+114,Design Thinking for Organisational Innovation,DFM-DTOI,2026-02-22 11:50:04.268711+00
+116,Graduate Diploma of Cyber Security,GD-CYBSEC,2026-02-22 11:50:04.268711+00
+117,Master of Design,Research,2026-02-22 11:50:04.268711+00
+118,MathsLink: General,NN-MLGEN,2026-02-22 11:50:04.268711+00
+120,Bachelor of Design/Bachelor of Applied Innovation,BB-DESAIN,2026-02-22 11:50:04.268711+00
+121,Advanced Diploma of Screen and Media,CUA60620,2026-02-22 11:50:04.268711+00
+122,Bachelor of Psychological Sciences/Bachelor of Criminal Justice and Criminology,BB-PSYCJC,2026-02-22 11:50:04.268711+00
+123,Victorian Certificate of Education,VCE0000001,2026-02-22 11:50:04.268711+00
+124,Course in Identifying and Responding to Family Violence Risk,22510VIC,2026-02-22 11:50:04.268711+00
+125,Master of Human Resource Management,MA-HRM1,2026-02-22 11:50:04.268711+00
+127,Bachelor of Biomedical Science,BA-BIOMSC,2026-02-22 11:50:04.268711+00
+128,Graduate Certificate of Engineering,GC-ENG,2026-02-22 11:50:04.268711+00
+129,Bachelor of Psychological Sciences/Bachelor of Applied Innovation,BB-PSYAIN,2026-02-22 11:50:04.268711+00
+130,Advanced Diploma of Building Design,Architectural,2026-02-22 11:50:04.268711+00
+131,Bachelor of Games and Interactivity/Bachelor of Animation,BB-GAMIANI,2026-02-22 11:50:04.268711+00
+133,Bachelor of Health Science/Bachelor of Business,BB-HSCBUS1,2026-02-22 11:50:04.268711+00
+135,Certificate III in Early Childhood Education and Care,CHC30121,2026-02-22 11:50:04.268711+00
+136,Diploma of Design,UniLink,2026-02-22 11:50:04.268711+00
+137,Bachelor of Screen Production,BA-SCRPRD1,2026-02-22 11:50:04.268711+00
+138,Graduate Certificate of Applied Statistics,GC-APPS,2026-02-22 11:50:04.268711+00
+140,Master of Engineering Practice,MA-ENGPRC,2026-02-22 11:50:04.268711+00
+141,Certificate III in EAL,Access,2026-02-22 11:50:04.268711+00
+143,Master of Information Technology,MA-IT1,2026-02-22 11:50:04.268711+00
+144,Certificate IV in Mental Health,CHC43315,2026-02-22 11:50:04.268711+00
+145,Master of Supply Chain Innovation,MA-SCI1,2026-02-22 11:50:04.268711+00
+146,Graduate Certificate of Urban Design,GC-UD,2026-02-22 11:50:04.268711+00
+147,Bachelor of Computer Science,BA-CS,2026-02-22 11:50:04.268711+00
+148,Graduate Certificate in Learning and Teaching,Higher Education,2026-02-22 11:50:04.268711+00
+149,Bachelor of Business Analytics and Analysis/Bachelor of Business,BB-BAABUS1,2026-02-22 11:50:04.268711+00
+150,UniLink Bridging Program,TE-UBP1,2026-02-22 11:50:04.268711+00
+151,Microsoft Outlook,SC-MO,2026-02-22 11:50:04.268711+00
+152,Bachelor of Business/Bachelor of Applied Innovation,BB-BUSAIN1,2026-02-22 11:50:04.268711+00
+153,Bachelor of Media and Communication,Professional,2026-02-22 11:50:04.268711+00
+154,Master of Science,Biotechnology,2026-02-22 11:50:04.268711+00
+155,Certificate III in Bricklaying and Blocklaying,CPC33020,2026-02-22 11:50:04.268711+00
+158,Certificate IV in Photography and Digital Imaging,CUA41120,2026-02-22 11:50:04.268711+00
+159,Diploma of Emergency Health Care,HLT51020,2026-02-22 11:50:04.268711+00
+160,Bachelor of Computer Science/Bachelor of Applied Innovation,BB-CSAIN,2026-02-22 11:50:04.268711+00
+161,Diploma of Graphic Design,CUA50720,2026-02-22 11:50:04.268711+00
+162,Writing for the Board – Report writing for strategic influence,BOARDWR,2026-02-22 11:50:04.268711+00
+163,Master of Psychology,Clinical Psychology,2026-02-22 11:50:04.268711+00
+165,Bachelor of Information and Communication Technology,Professional,2026-02-22 11:50:04.268711+00
+169,Master of Construction and Infrastructure Management,MA-CIMGT,2026-02-22 11:50:04.268711+00
+170,Diploma of Professional Writing and Editing,CUA50118,2026-02-22 11:50:04.268711+00
+171,Graduate Certificate of Educational Studies,GC-EDUSTU1,2026-02-22 11:50:04.268711+00
+172,Diploma of Digital Marketing,10931NAT,2026-02-22 11:50:04.268711+00
+173,Microsoft Excel Introduction,EXCAIS,2026-02-22 11:50:04.268711+00
+174,Bachelor of Business,BA-BUS11S,2026-02-22 11:50:04.268711+00
+176,Microsoft Word Advanced,SC-MWA,2026-02-22 11:50:04.268711+00
+177,Graduate Certificate of Entrepreneurship,GC-ENT,2026-02-22 11:50:04.268711+00
+178,Graduate Certificate in Construction Management,GC-CMGT,2026-02-22 11:50:04.268711+00
+179,Bachelor of Health Science/Bachelor of Arts,BB-HSCART,2026-02-22 11:50:04.268711+00
+180,Bachelor of Circus Arts,BA-CIRCA1,2026-02-22 11:50:04.268711+00
+181,Graduate Certificate in Forensic Mental Health Nursing,GC-FMHN,2026-02-22 11:50:04.268711+00
+183,Certificate III in Plumbing,CPC32420,2026-02-22 11:50:04.268711+00
+184,Bachelor of Health Science/Bachelor of Applied Innovation,BB-HSCAIN,2026-02-22 11:50:04.268711+00
+185,Certificate IV in Training and Assessment,TAE40122,2026-02-22 11:50:04.268711+00
+187,Certificate III in Individual Support,CHC33021,2026-02-22 11:50:04.268711+00
+188,Doctor of Psychology,Clinical and Forensic Psychology,2026-02-22 11:50:04.268711+00
+189,Bachelor of Business Analytics and Analysis/Bachelor of Cyber Security,BB-BAACYB,2026-02-22 11:50:04.268711+00
+190,De-mystifying Industry 4.0 / Digital Manufacturing,SH-DMIDM,2026-02-22 11:50:04.268711+00
+191,Mediation Training,MEFUIS,2026-02-22 11:50:04.268711+00
+192,Certificate III in Laboratory Skills,MSL30118,2026-02-22 11:50:04.268711+00
+193,Course in Introduction to the National Disability Insurance Scheme,22469VIC,2026-02-22 11:50:04.268711+00
+195,Bachelor of Data Science,BA-DS,2026-02-22 11:50:04.268711+00
+196,Master of Media and Communication,MA-MCO,2026-02-22 11:50:04.268711+00
+198,Executive Coaching Program,SS-COACH1,2026-02-22 11:50:04.268711+00
+199,Associate Degree in Applied Technologies,AB-APPTEC,2026-02-22 11:50:04.268711+00
+201,Graduate Certificate of Human Resource Management,GC-HRM,2026-02-22 11:50:04.268711+00
+203,Graduate Diploma of Entrepreneurship,GD-ENT,2026-02-22 11:50:04.268711+00
+205,Masterclass: Change Management,MCBCM,2026-02-22 11:50:04.268711+00
+206,Certificate IV in Building and Construction,CPC40120,2026-02-22 11:50:04.268711+00
+209,Graduate Certificate of Design,GC-DESG,2026-02-22 11:50:04.268711+00
+210,Master of Physiotherapy,MA-PHYS,2026-02-22 11:50:04.268711+00
+211,Leading in a Hybrid Environment,LEADHYBRD,2026-02-22 11:50:04.268711+00
+212,Graduate Certificate in Client Assessment and Case Management,CHC82015,2026-02-22 11:50:04.268711+00
+213,Bachelor of Nursing,BA-NUR,2026-02-22 11:50:04.268711+00
+214,Graduate Certificate of Media and Communication,GC-MCO,2026-02-22 11:50:04.268711+00
+215,Graduate Certificate of Forensic Psychiatric Practice,GC-FPP,2026-02-22 11:50:04.268711+00
+216,Master of Research,MR-INTHAS,2026-02-22 11:50:04.268711+00
+217,Principles of Design Thinking,DFM-PRDSTH,2026-02-22 11:50:04.268711+00
+218,Master of Engineering Practice/ Master of Construction Management Practice,MM-EPRCMP,2026-02-22 11:50:04.268711+00
+219,Graduate Certificate of Psychology,GC-PSYS,2026-02-22 11:50:04.268711+00
+220,Course in Initial EAL,22482VIC,2026-02-22 11:50:04.268711+00
+221,Bachelor of Media and Communication/Bachelor of Business,BB-MCMNBUS1,2026-02-22 11:50:04.268711+00
+222,Diploma of Leadership and Management,BSB50420,2026-02-22 11:50:04.268711+00
+223,Graduate Diploma of Forensic Behavioural Science,GD-FBS,2026-02-22 11:50:04.268711+00
+224,selectedCertificate IV in Screen Media,Online delivery,2026-02-22 11:50:04.268711+00
+225,Certificate IV in Disability Support,CHC43121,2026-02-22 11:50:04.268711+00
+226,Certificate II in EAL,Access,2026-02-22 11:50:04.268711+00
+227,Master of Architecture and Urban Design,MA-ARCUD,2026-02-22 11:50:04.268711+00
+229,Diploma of Building and Construction,Building,2026-02-22 11:50:04.268711+00
+231,Diploma of Engineering Technology,22478VIC,2026-02-22 11:50:04.268711+00
+233,Bachelor of Arts/Bachelor of Psychological Sciences,BB-ARTPSY,2026-02-22 11:50:04.268711+00
+235,Master of Professional Engineering,MA-EPRE,2026-02-22 11:50:04.268711+00
+236,Graduate Certificate of Business Information Systems,GC-BIS1,2026-02-22 11:50:04.268711+00
+237,Masterclass: Design Business Strategy,MCBBS,2026-02-22 11:50:04.268711+00
+238,Master of Aviation,MA-AV,2026-02-22 11:50:04.268711+00
+239,Bachelor of Arts/Bachelor of Applied Innovation,BB-ARTAIN,2026-02-22 11:50:04.268711+00
+240,Graduate Diploma of Psychology,GD-PSYS,2026-02-22 11:50:04.268711+00
+241,Graduate Certificate of Programming and Development,GC-PDS,2026-02-22 11:50:04.268711+00
+242,Master of Business,Research,2026-02-22 11:50:04.268711+00
+243,Master of Counselling,Advanced,2026-02-22 11:50:04.268711+00
+244,Diploma of Justice,22594VIC,2026-02-22 11:50:04.268711+00
+245,Bachelor of Business Information Technology,Professional,2026-02-22 11:50:04.268711+00
+246,Maths Link Methods,NN-MLMTH,2026-02-22 11:50:04.268711+00
+248,Diploma of Information Technology,ICT50220,2026-02-22 11:50:04.268711+00
+249,Master of Business Information Systems,MA-BIS,2026-02-22 11:50:04.268711+00
+250,Bachelor of Laws,BA-LAW,2026-02-22 11:50:04.268711+00
+252,Bachelor of Film and Television,Honours,2026-02-22 11:50:04.268711+00
+253,Diploma of Work Health and Safety,BSB51319,2026-02-22 11:50:04.268711+00
+254,Diploma of Early Childhood Education and Care,CHC50121,2026-02-22 11:50:04.268711+00
+255,Bachelor of Animation,BA-ANI,2026-02-22 11:50:04.268711+00
+256,Master of Arts,Research,2026-02-22 11:50:04.268711+00
+257,Master of Social Impact,MA-SI,2026-02-22 11:50:04.268711+00
+258,Bachelor of Engineering Technology,BA-ENGTEC,2026-02-22 11:50:04.268711+00
+259,Graduate Certificate of Marketing,GC-MKT,2026-02-22 11:50:04.268711+00
+260,Bachelor of Laws/Bachelor of Criminal Justice and Criminology,BB-LAWCRJ,2026-02-22 11:50:04.268711+00
+261,Psychosocial Recovery Coach Short Course,NC-HEAS02,2026-02-22 11:50:04.268711+00
+263,Master of Project Management,MA-PM1,2026-02-22 11:50:04.268711+00
+264,Bachelor of Arts,BA,2026-02-22 11:50:04.268711+00
+266,Bachelor of Health Science/Bachelor of Science,BB-HSCSCI,2026-02-22 11:50:04.268711+00
+268,Certificate IV in Youth Work,CHC40413,2026-02-22 11:50:04.268711+00
+269,Associate Degree of Engineering,AB-ENG,2026-02-22 11:50:04.268711+00
+271,Plumbing Licence for Common Units Skill Set,PLUMLICSS1,2026-02-22 11:50:04.268711+00
+273,Master of Cyber Security Management,MA-CYMGTS,2026-02-22 11:50:04.268711+00
+274,Graduate Diploma of Project Management,GD-PMS,2026-02-22 11:50:04.268711+00
+275,Graduate Certificate in Forensic Behavioural Science,GC-FBS,2026-02-22 11:50:04.268711+00
+276,Graduate Diploma of Environmental Health Practice,GD-ENVHP,2026-02-22 11:50:04.268711+00
+277,Certificate II in Building and Construction Pre-apprenticeship – Bricklaying,22338VIC,2026-02-22 11:50:04.268711+00
+278,Microsoft Excel Advanced,EXCCIS,2026-02-22 11:50:04.268711+00
+280,Bachelor of Criminal Justice and Criminology,BA-CRIJUSS,2026-02-22 11:50:04.268711+00
+282,Bachelor of Business Analytics and Analysis/Bachelor of Applied Innovation,BB-BAAAIN,2026-02-22 11:50:04.268711+00
+285,Graduate Certificate of Supply Chain Innovation,GC-SCI,2026-02-22 11:50:04.268711+00
+286,Industrial Training Course: PSS®E Module 1,SH-PSSEM01,2026-02-22 11:50:04.268711+00
+287,Positive Leadership,POLDIS,2026-02-22 11:50:04.268711+00
+293,Graduate Diploma of Writing,GD-WRI,2026-02-22 11:50:04.268711+00
+294,Graduate Diploma of Aviation,GD-AV,2026-02-22 11:50:04.268711+00
+295,Master of Occupational Therapy,MA-OCC,2026-02-22 11:50:04.268711+00
+296,Masterclass: The Art of Workplace Storytelling,WPSTTIS,2026-02-22 11:50:04.268711+00
+297,Master of Marketing,MA-MKT1,2026-02-22 11:50:04.268711+00
+298,Bachelor of Science/Bachelor of Applied Innovation,BB-SC2AIN,2026-02-22 11:50:04.268711+00
+299,Contract Management Essentials,CMESIS,2026-02-22 11:50:04.268711+00
+302,Graduate Diploma of Professional Accounting,GD-PACC,2026-02-22 11:50:04.268711+00
+303,Certificate IV in Community Services,CHC42021,2026-02-22 11:50:04.268711+00
+304,Breakthrough Lab,DFM-IAAS,2026-02-22 11:50:04.268711+00
+305,Bachelor of Laws/Bachelor of Engineering,Honours,2026-02-22 11:50:04.268711+00
+306,Course in EAL,22483VIC,2026-02-22 11:50:04.268711+00
+307,Advanced Diploma of Graphic Design,CUA60320,2026-02-22 11:50:04.268711+00
+308,Bachelor of Aviation Management,BA-AVMGT,2026-02-22 11:50:04.268711+00
+309,Mastering the Art of Workplace Storytelling - Online,WPSTTIS-O,2026-02-22 11:50:04.268711+00
+310,Diploma of Screen and Media,CUA51020,2026-02-22 11:50:04.268711+00
+311,Graduate Certificate of Research and Innovation Management,GC-RESIM,2026-02-22 11:50:04.268711+00
+312,Master of Engineering,Research,2026-02-22 11:50:04.268711+00
+313,Business Writing Skills,BUSSIS,2026-02-22 11:50:04.268711+00
+318,Graduate Certificate of Financial Planning,GC-FINPLS,2026-02-22 11:50:04.268711+00
+319,Diploma of Community Services,CHC52015,2026-02-22 11:50:04.268711+00
+320,Certificate IV in Leisure and Health,CHC43415,2026-02-22 11:50:04.268711+00
+321,Advanced Diploma of Creative Product Development,CUA60420,2026-02-22 11:50:04.268711+00
+322,Robotics Play and STEM for Teachers,NC-STEM01,2026-02-22 11:50:04.268711+00
+323,Master of Data Science,MA-DATASC,2026-02-22 11:50:04.268711+00
+324,Bachelor of Aviation/Bachelor of Business,BB-AVBUS3,2026-02-22 11:50:04.268711+00
+327,Certificate IV in Accounting and Bookkeeping,FNS40222,2026-02-22 11:50:04.268711+00
+328,Certificate III in Electrotechnology Electrician,UEE30820,2026-02-22 11:50:04.268711+00
+330,Business Analysis,AGBAIS,2026-02-22 11:50:04.268711+00
+332,Certificate IV in Circus Arts,10824NAT,2026-02-22 11:50:04.268711+00
+333,Bachelor of Education Studies,BA-EDUST,2026-02-22 11:50:04.268711+00
+335,Graduate Diploma in Clinical Supervision,GD-CLSUP,2026-02-22 11:50:04.268711+00
+337,Diploma of Teacher Education Preparation,22602VIC,2026-02-22 11:50:04.268711+00
+338,Master of Dietetics,MA-DIET,2026-02-22 11:50:04.268711+00
+339,Certificate III in General Education for Adults,22474VIC,2026-02-22 11:50:04.268711+00
+340,Bachelor of Criminal Justice and Criminology/Bachelor of Applied Innovation,BB-CJCAIN,2026-02-22 11:50:04.268711+00
+341,Bachelor of Aviation and Piloting / Bachelor of Business,BB-AVPBUS,2026-02-22 11:50:04.268711+00
+342,Bachelor of Digital Construction Management,BA-DCM,2026-02-22 11:50:04.268711+00
+343,Bachelor of Business Analytics and Analysis,BA-BAA,2026-02-22 11:50:04.268711+00
+344,English Language Intensive Course for Overseas Students,ELICOS,2026-02-22 11:50:04.268711+00
+345,Master of Finance,MA-FIN,2026-02-22 11:50:04.268711+00
+346,Diploma of Nursing,HLT54121,2026-02-22 11:50:04.268711+00
+347,Bachelor of Information and Communication Technology/Bachelor of Applied Innovation,BB-ICTAIN,2026-02-22 11:50:04.268711+00
+350,Certificate III in Health Services Assistance,HLT33115,2026-02-22 11:50:04.268711+00
+351,Certificate IV in Information Technology,Gaming Development,2026-02-22 11:50:04.268711+00
+352,Bachelor of Laws/Bachelor of Business,BB-LAWBUS1,2026-02-22 11:50:04.268711+00
+354,Certificate II in Building and Construction Pre-apprenticeship,22614VIC,2026-02-22 11:50:04.268711+00
+355,Certificate IV in Engineering,MEM40119,2026-02-22 11:50:04.268711+00
+356,Mental Health First Aid Short Course,NC-HEAS01,2026-02-22 11:50:04.268711+00
+357,Master of Cyber Security,MA-CYBSEC,2026-02-22 11:50:04.268711+00
+358,Critical Thinking and Problem Solving for Local Government,CRITTIS,2026-02-22 11:50:04.268711+00
+359,Finance for Non-Finance Managers - Understanding Numbers and Business Impact,FFFMIS,2026-02-22 11:50:04.268711+00
+361,Empowering Women in the Workplace,WINFIS,2026-02-22 11:50:04.268711+00
+362,Certificate IV in Plumbing and Services,CPC40920,2026-02-22 11:50:04.268711+00
+363,Certificate IV in Mental Health Peer Work,CHC43515,2026-02-22 11:50:04.268711+00
+364,Bachelor of Accounting,BA-ACCS,2026-02-22 11:50:04.268711+00
+365,Bachelor of Laws/Bachelor of Media and Communication,BB-LAWMCM,2026-02-22 11:50:04.268711+00
+366,Undergraduate Certificate of Criminal Justice and Criminology,CU-CRIJUSS,2026-02-22 11:50:04.268711+00
+367,Swinburne Foundation Program,SF-SFP,2026-02-22 11:50:04.268711+00
+368,Certificate I in EAL,Access,2026-02-22 11:50:04.268711+00
+370,Graduate Certificate of Information Technology,GC-IT1,2026-02-22 11:50:04.268711+00
+371,Bachelor of Laws/Bachelor of Computer Science,BB-LAWCS,2026-02-22 11:50:04.268711+00
+372,Maths Link General,NN-MLFTH,2026-02-22 11:50:04.268711+00
+375,Generative AI for professionals: Your productivity partner,GENAI,2026-02-22 11:50:04.268711+00
+376,Bachelor of Aviation Management/Bachelor of Business,BB-AVMBUS3,2026-02-22 11:50:04.268711+00
+379,Graduate Certificate of Financial Technologies,GC-FINTEC,2026-02-22 11:50:04.268711+00
+381,Hydrogen fundamentals – An emerging frontier in the energy landscape,HYDROFUN,2026-02-22 11:50:04.268711+00
+382,Leadership Development Program,DEVLIS,2026-02-22 11:50:04.268711+00
+383,Graduate Certificate of Social Impact,GC-SI,2026-02-22 11:50:04.268711+00
+384,Certificate IV in Design,CUA40720,2026-02-22 11:50:04.268711+00
+385,Master of Forensic Behavioural Science,MA-FBS,2026-02-22 11:50:04.268711+00
+390,Bachelor of Games and Interactivity/Bachelor of Computer Science,BB-GAMCS,2026-02-22 11:50:04.268711+00
+393,Masterclass: Lead Innovative Thinking and Practice,MCLIT,2026-02-22 11:50:04.268711+00
+394,Postgraduate Qualifying Program,NN-PQP,2026-02-22 11:50:04.268711+00
+396,Advanced Diploma of Engineering Technology,22479VIC,2026-02-22 11:50:04.268711+00
+399,Diploma of Project Management,BSB50820,2026-02-22 11:50:04.268711+00
+400,Diploma of Accounting,FNS50222,2026-02-22 11:50:04.268711+00
+401,Certificate II in Plumbing,Pre-apprenticeship,2026-02-22 11:50:04.268711+00
+402,Certificate III in Engineering - Mechanical Trade,MEM30219,2026-02-22 11:50:04.268711+00
+404,Bachelor of Accounting and Business Information Technology,Professional,2026-02-22 11:50:04.268711+00
+406,Diploma of Library and Information Services,BSB50520,2026-02-22 11:50:04.268711+00
+407,Graduate Diploma in Forensic Psychology,GD-PSYFOR,2026-02-22 11:50:04.268711+00
+408,Introduction to Welding,WELTD70W,2026-02-22 11:50:04.268711+00
+409,Graduate Diploma in Applied Statistics,GD-APPS,2026-02-22 11:50:04.268711+00
+412,Bachelor of Media and Communication/Bachelor of Applied Innovation,BB-MCMAIN,2026-02-22 11:50:04.268711+00
+413,Graduate Certificate of Urban Informatics,GC-UI,2026-02-22 11:50:04.268711+00
+414,Graduate Certificate of Professional Data Analytics,GC-PAS,2026-02-22 11:50:04.268711+00
+415,Microsoft Word Intermediate,SC-MWI,2026-02-22 11:50:04.268711+00
+416,Graduate Certificate of Cyber Security,GC-CYBSEC,2026-02-22 11:50:04.268711+00
+418,Certificate II in General Education for Adults,22473VIC,2026-02-22 11:50:04.268711+00
+419,Graduate Certificate in Applied Business,10840NAT,2026-02-22 11:50:04.268711+00
+420,Bachelor of Animation/Bachelor of Applied Innovation,BB-ANIAIN,2026-02-22 11:50:04.268711+00
+422,Graduate Certificate of Cyber Security Management,GC-CYMGTS,2026-02-22 11:50:04.268711+00
+423,Bachelor of Aviation,BA-AV,2026-02-22 11:50:04.268711+00
+424,Work Skill Instructor Skill Set,TAESS00028,2026-02-22 11:50:04.268711+00
+425,Diploma of Human Resource Management,BSB50320,2026-02-22 11:50:04.268711+00
+426,Certificate IV in Project Management Practice,BSB40920,2026-02-22 11:50:04.268711+00
+427,Bachelor of Laws/Bachelor of Science,BB-LAWSC,2026-02-22 11:50:04.268711+00
+429,How to have a difficult conversation,DIFFCIS,2026-02-22 11:50:04.268711+00
+431,Certificate III in Non-Emergency Patient Transport,HLT31120,2026-02-22 11:50:04.268711+00
+432,Bachelor of Social Science,BA-SSS,2026-02-22 11:50:04.268711+00
+433,Certificate IV in Work Health and Safety,BSB41419,2026-02-22 11:50:04.268711+00
+434,Graduate Certificate of Product Management,GC-PROMS,2026-02-22 11:50:04.268711+00
+437,Graduate Diploma of Counselling,GD-COU,2026-02-22 11:50:04.268711+00
+439,Certificate II in Electrotechnology,Career Start,2026-02-22 11:50:04.268711+00
+440,Master of Construction Management Practice,MA-CMGTP,2026-02-22 11:50:04.268711+00
+441,Masterclass: Leader as Coach,MCLAC,2026-02-22 11:50:04.268711+00
+442,Diploma of Accounting and Finance,DP-ACCFIN,2026-02-22 11:50:04.268711+00
+443,Bachelor of Cyber Security,BA-CYB,2026-02-22 11:50:04.268711+00
+444,Bachelor of Exercise and Sport Science,BA-ESS,2026-02-22 11:50:04.268711+00
+445,Diploma of Science,UniLink,2026-02-22 11:50:04.268711+00
+447,Diploma of Visual Arts,CUA51120,2026-02-22 11:50:04.268711+00
+448,Diploma of Arts and Communication,UniLink,2026-02-22 11:50:04.268711+00
+449,Bachelor of Criminal Justice and Criminology/Bachelor of Cyber Security,BB-CJCCYB,2026-02-22 11:50:04.268711+00
+450,Bachelor of Arts/Bachelor of Business,BB-ARTBUS2,2026-02-22 11:50:04.268711+00
+451,Industrial Training Course: PSS®SINCAL Module 1,SH-PSSSIN1,2026-02-22 11:50:04.268711+00
+452,Graduate Diploma of Forensic Mental Health Nursing,GD-FMHN,2026-02-22 11:50:04.268711+00
