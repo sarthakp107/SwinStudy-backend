@@ -97,7 +97,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
 
 // JWT Authentication
-var jwtKey = builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationException("Jwt:Key is required.");
+// var jwtKey = builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationException("Jwt:Key is required.");
+var jwtKey = builder.Configuration["Jwt:Key"] ?? "dev-debug-jwt-key-change-me";
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "SwinStudy.Api";
 var jwtAudience = builder.Configuration["Jwt:Audience"] ?? "SwinStudy.Api";
 
@@ -148,11 +149,11 @@ builder.Services.AddScoped<SurveyService>();
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    db.Database.Migrate();
-}
+// using (var scope = app.Services.CreateScope())
+// {
+//     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+//     db.Database.Migrate();
+// }
 
 // CORS first (before any other middleware that might write a response)
 app.UseCors("AllowFrontend");
